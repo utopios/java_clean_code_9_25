@@ -1,7 +1,7 @@
 package org.example;
 import java.util.List;
 public class PortfolioDiplayer {
-    
+
     public void displayAllInvestments(Portfolio portfolio) {
         if (portfolio == null) {
             throw new IllegalArgumentException("Le portefeuille ne peut pas être null");
