@@ -1,0 +1,3 @@
+interface ElectricVehicle {
+    void chargeBattery();
+}

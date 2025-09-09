@@ -1,0 +1,3 @@
+interface FuelVehicle {
+    void fillUpWithFuel();
+}
