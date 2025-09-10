@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -7,17 +8,28 @@ import org.example.entity.FoodItem;
 import java.time.LocalDateTime;
 import java.util.List;
 public class SmartRefrigeratorTest {
+
+    private SmartRefrigerator fridge;
+    private LocalDateTime expirationDateTime;
+    private String nameItem;
+    private List<FoodItem> items;
+    private FoodItem foodItem;
+
+    @BeforeEach()
+    void setUp() {
+        fridge = new SmartRefrigerator();
+    }
+
     @Test
     void shouldBeEmptyWhenCreated() {
-        SmartRefrigerator fridge = new SmartRefrigerator();
         assertTrue(fridge.isEmpty());
     }
 
     @Test
     void shouldNotBeEmptyAfterAddingAnItem() {
-        SmartRefrigerator fridge = new SmartRefrigerator();
-        LocalDateTime expirationDateTime = LocalDateTime.now().plusDays(3);
-        String nameItem = "Lait";
+
+        expirationDateTime = LocalDateTime.now().plusDays(3);
+        nameItem = "Lait";
 
         fridge.addItem(nameItem, expirationDateTime);
 
@@ -38,14 +50,14 @@ public class SmartRefrigeratorTest {
 
     @Test
     void shouldStoreFoodItemAddedItems() {
-        SmartRefrigerator fridge = new SmartRefrigerator();
-        LocalDateTime expirationDateTime = LocalDateTime.now().plusDays(3);
-        String nameItem = "Lait";
+        fridge = new SmartRefrigerator();
+        expirationDateTime = LocalDateTime.now().plusDays(3);
+        nameItem = "Lait";
 
         fridge.addItem(nameItem, expirationDateTime);
 
-        List<FoodItem> items = fridge.getItems();
-        FoodItem foodItem = items.get(0);
+        items = fridge.getItems();
+        foodItem = items.get(0);
 
         assertEquals(nameItem, foodItem.getNameItem());
         assertEquals(expirationDateTime, foodItem.getexpirationDateTime());
