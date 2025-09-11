@@ -392,6 +392,15 @@ Payroll payroll = new Payroll();
 payroll.calculateSalary(new Developer(150, 10));
 payroll.calculateSalary(new Manager(150, 10));
 ```
+
+### Solutions 
+
+- Duplicate Code
+- Magic Numbers
+- Switch statement chain
+- Primitive obsession 
+
+
 ---
 
 ## Kata 5 : Analyse des Données
