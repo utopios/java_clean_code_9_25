@@ -20,8 +20,12 @@
 * **Service métier** : événements métier importants (changement d’état), pas les détails I/O.
 * **Infra/adapters** : erreurs techniques contextualisées (timeouts, DB down), jamais les payloads sensibles.
 
-```
-```
+
+### Anti-patterns fréquents
+
+* `System.out.println` (pas de niveau, pas de structure).
+* Loguer des **objets géants** (DTO complets) ou **des boucles** élément par élément.
+* Écrire des **logs dynamiques coûteux** (string concat) sans garde : utiliser `{}` (SLF4J) ou `isDebugEnabled()`.
 
 ### Mini-checklist “Clean Logs”
 
