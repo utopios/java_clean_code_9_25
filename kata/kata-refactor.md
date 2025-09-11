@@ -236,3 +236,13 @@ public class ParkingServiceTest {
 ```
 
 
+### Etapes:
+
+1. Primitive Obsession
+2. Extraction des ValuesObjects
+3. Remplacement des Magic Numbers
+4. Strategy Pattern pour les remises
+5. Avoir une SRP pour les classes
+6. Code Mort
+7. Améliorer  le flux de calcule. 
+
