@@ -30,4 +30,10 @@ public class HarryPotterSteps {
         double prixTotal = priceCalculator.calculatePrice(bookBasket);
         assertEquals(prixAttendu, prixTotal);
     }
+
+    @Then("la remise appliquée est de {int}%")
+    public void laRemiseAppliqueeEstDe(int pourcentage) {
+        int rate = priceCalculator.getRate(bookBasket);
+        assertEquals(pourcentage, rate);
+    }
 }
