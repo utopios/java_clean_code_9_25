@@ -30,6 +30,6 @@ public class ConsoleLogger implements Logger {
 
     private void log(String level, String message) {
         String timestamp = LocalDateTime.now().format(TIMESTAMP_FORMAT);
-        System.out.println(String.format("[%s] %s - %s", timestamp, level, message));
+        System.out.printf("[%s] %s - %s%n", timestamp, level, message);
     }
 }
