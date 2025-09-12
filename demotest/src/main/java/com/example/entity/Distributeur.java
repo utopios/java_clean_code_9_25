@@ -1,4 +1,4 @@
-package org.example.entity;
+package com.example.entity;
 
 public class Distributeur {
     public RetraitResultat retirer(Compte compte, Integer montant) {

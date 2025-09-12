@@ -1,4 +1,4 @@
-package org.example.entity;
+package com.example.entity;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;

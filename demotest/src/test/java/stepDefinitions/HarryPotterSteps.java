@@ -4,8 +4,8 @@ package stepDefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
-import org.example.entity.BookBasket;
-import org.example.entity.PriceCalculator;
+import com.example.entity.BookBasket;
+import com.example.entity.PriceCalculator;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class HarryPotterSteps {

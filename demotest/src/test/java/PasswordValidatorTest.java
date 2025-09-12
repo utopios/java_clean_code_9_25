@@ -2,7 +2,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-import org.example.entity.PasswordValidator;
+import com.example.entity.PasswordValidator;
 public class PasswordValidatorTest {
 
     private PasswordValidator passwordValidator;

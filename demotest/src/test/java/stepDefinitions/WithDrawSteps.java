@@ -3,9 +3,9 @@ package stepDefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.example.entity.Compte;
-import org.example.entity.Distributeur;
-import org.example.entity.RetraitResultat;
+import com.example.entity.Compte;
+import com.example.entity.Distributeur;
+import com.example.entity.RetraitResultat;
 
 import static org.junit.jupiter.api.Assertions.*;
 public class WithDrawSteps {

@@ -1,5 +1,5 @@
-import org.example.entity.BookBasket;
-import org.example.entity.PriceCalculator;
+import com.example.entity.BookBasket;
+import com.example.entity.PriceCalculator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

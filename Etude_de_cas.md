@@ -32,3 +32,28 @@ L'application suit une architecture en couches typique :
    - Ajouter une gestion appropriée des exceptions.
    - Créer des exceptions personnalisées si nécessaire,
 
+# DAO
+
+## Checklist Clean Code
+
+#### Structure & Architecture
+- [ ] Créer des interfaces pour tous les services
+- [ ] Implémenter le pattern Repository correctement
+- [ ] Ajouter injection de dépendance (Spring, Guice, ou manuel)
+- [ ] Séparer la configuration de l'exécution
+
+#### Gestion d'Erreurs
+- [ ] Remplacer `null` par `Optional<T>`
+- [ ] Créer des exceptions métier spécifiques
+- [ ] Implémenter une stratégie de logging cohérente
+- [ ] Ajouter validation des paramètres d'entrée
+
+#### Testabilité
+- [ ] Rendre les collections non-statiques
+- [ ] Séparer la logique métier de l'infrastructure
+- [ ] Ajouter des tests unitaires
+
+#### Lisibilité
+- [ ] Extraire des constantes pour les valeurs magiques
+- [ ] Améliorer les noms de variables et méthodes
+- [ ] Formater le code de manière cohérente
